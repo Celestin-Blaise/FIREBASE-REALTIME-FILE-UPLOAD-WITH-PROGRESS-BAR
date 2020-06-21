@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FIREBASE FILE UPLOAD</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- header  -->
+			<center>
+				<h1>
+					FIREBASE REALTIME FILE UPLOAD
+				</h1>
+			</center>
+			<!-- file upload input  -->
+			<center>
+				<input type="file" value="upload" />
+			</center>
+			<!-- progress bar section  -->
+			<div
+				class="progress"
+				style="
+					width: 80%;
+					height: 5vh;
+					margin-top: 100px;
+					margin-left: 100px;
+					border: 5px solid red;
+					border-radius: 20px;
+					align-content: flex-start;
+				"
+			>
+				<div
+					class="progressBar"
+					style="
+						margin: 0;
+						padding: 0;
+						width: 0%;
+						background: #12b0e5;
+						height: 5vh;
+						border-radius: 20px;
+					"
+				></div>
+			</div>
+			<!-- output file container  -->
+			<div class="uploadedImage" style="width: 100%; margin: 100px 150px;">
+				<img src="" alt="uploadedImage" width="600" height="600" />
+			</div>
+		</div>
+		<!-- script tags  -->
+		<!-- firebase credentials  -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+		<!-- storage sdk  -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+		<!-- your project config -->
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: '',
+				authDomain: '',
+				databaseURL: '',
+				projectId: '',
+				storageBucket: '',
+				messagingSenderId: '',
+				appId: '',
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+		</script>
+		<!-- firebase credentials  -->
+		<script src="./app.js"></script>
+	</body>
+</html>
